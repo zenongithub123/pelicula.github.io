@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+
+p{
+	color: red;
+	opacity: 1;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: fantasy;
+
+}
+
+h1{
+	color:  #fdff;
+	background: linear-gradient(100deg,#333,blue, #222);
+	padding: 10px;
+	font-size: 40px;
+	margin-right: 2em;
+	margin-left: 1em;
+	margin-top: 2em;
+	text-align: center;
+	margin-bottom: 1em;
+	font-family: cursive;
+}
+
+
+
+img{
+	margin-left: -1em;
+	background: linear-gradient(90deg,#333,blue, #222);
+	width: 240px;
+	border-radius: 10px;
+	margin: 3em;
+	height: 350px;
+	padding: 30px 0px 30px;
+	cursor: pointer;
+	transition: all 0.5s linear;
+}
+
+img:hover{
+	transform: scale(1.1);
+
+
+}
+
+
+.error{
+	position: absolute;
+	width: 400px;
+	font-size: 20px;
+	left: 0;
+	color: red;
+	
+}
+
+
+input{
+	width: 50%;
+	padding: 13px;
+	background-color: rgba(1,1,1,.8);
+	position: absolute;
+	top: 2em;
+	left: 3em;
+	color: white;
+	font-family: cursive;
+	border: 0;
+	outline: 0;
+
+}
+
+input::placeholder{
+	color: white;
+
+}
+
+#resultado{
+	position: absolute;
+	font-family: cursive;
+	text-transform: uppercase;
+	color: red;
+	top: 8em;
+	left: 4em;
+	
+}
+
+/*TODAS TUS PELICULAS*/
+
+.tus-peliculas{
+	width: 100%;
+	height: 23vh;
+	background: white;
+	background-image: url(img/netflix3.jpg);
+	opacity: 0.5;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all 0.6s linear;
+}
+
+a{
+	text-decoration: none;
+	position: absolute;
+	right: 3em;
+	padding: 10px;
+	color: white;
+	background-color: red;
+	margin-top: 1em;
+	font-family: cursive;
+	border-radius: 3px;
+}
+
+a:hover{
+	background-color: #222;
+}
+
+/*Responsive*/
+
+@media screen and (min-width: 375px){
+	.tus-peliculas{
+		height: 10em;
+
+	}
+
+
+
+	#resultado{
+		margin-top: 4em;
+	}
+
+	
+
+}
+
+
+
+
+/*ESTILO A LA TABLA DE BUSQUEDA*/
+
